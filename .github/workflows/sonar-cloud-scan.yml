@@ -1,9 +1,7 @@
   name: SonarCloud Scan
-  on:[push]
+  on:[push ,pull_request]
     - main
     - release/*
-  on:[pull_request]
-    - main
   jobs:
     name: deploy to staging
     runs-on: ubuntu-latest
