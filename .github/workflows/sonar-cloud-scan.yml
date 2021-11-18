@@ -1,10 +1,10 @@
   name: SonarCloud Scan
-  on:
+  on:[push]
   push:
     branches:
     - main
     - release/*
-  on:
+  on:[pull_request]
   pull_request:
     branches:
     - main
