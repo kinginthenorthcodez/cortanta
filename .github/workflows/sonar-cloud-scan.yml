@@ -1,11 +1,9 @@
   name: SonarCloud Scan
   on:[push]
-  push:
     branches:
     - main
     - release/*
   on:[pull_request]
-  pull_request:
     branches:
     - main
   jobs:
